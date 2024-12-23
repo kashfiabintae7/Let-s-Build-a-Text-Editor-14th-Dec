@@ -42,11 +42,11 @@ def save_file():
     window.title(f"Codingal's Text Editor - {filepath}")
     
     
-txt_edit = Text(window)
-fr_buttons = Frame(window, relief = RAISED, bd = 2)
+txt_edit = Text(window, bg = "#bcbfd5")
+fr_buttons = Frame(window, relief = RAISED, bd = 2, bg = "#838698")
 
-btn_open = Button(fr_buttons, text = "Open", command = open_file)
-btn_save = Button(fr_buttons, text = "Save as...", command = save_file)
+btn_open = Button(fr_buttons, text = "Open", command = open_file, bg = "#575a73", fg = "white")
+btn_save = Button(fr_buttons, text = "Save as...", command = save_file, fg = "white", bg = "#353951")
 
 btn_open.grid(row = 0, column = 0, sticky = "ew", padx = 5, pady = 5)
 btn_save.grid(row = 1, column = 0, sticky = "ew", padx = 5)
